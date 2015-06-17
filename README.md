@@ -1,7 +1,38 @@
-packer templates for windows
-========================
+==========================
+Windows Packer Templates
+==========================
 
-These are example templates to go with [packer-community/packer-windows-plugins](https://github.com/packer-community/packer-windows-plugins). Files ending in `.example` will need to be customized and may even require leg-work on your part (i.e., entering license-keys, downloading vm tools, etc).
+Packer templates for building base VM boxes.
+
+Usage
+=====
+
+Installing Packer using Chocolatey
+----------------------------------
+
+    $ cinst -y packer
+    $ cinst -y packer-windows-scripts
+
+Running Packer
+--------------
+
+
+
+    $ git clone https://github.com/skylock/packer-windows
+    $ cd packer-windows
+    $ packer build template_name.json
+
+
+If you want to build only vmware.
+
+
+
+    $ packer build -only=vmware-iso template_name.json
+
+Supported versions
+------------------
+
+This templates where tested using a packer 0.7.5 and VMware Workstation 8
 
 ### credits
 

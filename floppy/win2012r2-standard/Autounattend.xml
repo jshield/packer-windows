@@ -69,8 +69,8 @@
                     <WillShowUI>OnError</WillShowUI>
                 </ProductKey>
                 <AcceptEula>true</AcceptEula>
-                <FullName>EMC</FullName>
-                <Organization>Temasoft</Organization>
+                <FullName>Skylock</FullName>
+                <Organization>EMC</Organization>
             </UserData>
         </component>
     </settings>
@@ -151,7 +151,7 @@
                         <Group>administrators</Group>
                         <DisplayName>ts</DisplayName>
                         <Name>ts</Name>
-                        <Description>Temasoft User</Description>
+                        <Description>Temporary User</Description>
                     </LocalAccount>
                 </LocalAccounts>
             </UserAccounts>
