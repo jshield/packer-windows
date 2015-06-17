@@ -11,7 +11,7 @@ Installing Packer using Chocolatey
 ----------------------------------
 
     $ cinst -y packer
-    $ cinst -y packer-windows-scripts
+    $ cinst -y packer-windows-plugins
 
 Running Packer
 --------------
