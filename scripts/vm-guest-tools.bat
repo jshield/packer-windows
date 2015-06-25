@@ -3,8 +3,8 @@ if not exist "C:\Windows\Temp\7z920-x64.msi" (
 )
 msiexec /qb /i C:\Windows\Temp\7z920-x64.msi
 
-if "%PACKER_BUILDER_TYPE%" equ "vmware-windows-iso" goto :vmware
-if "%PACKER_BUILDER_TYPE%" equ "virtualbox-windows-iso" goto :virtualbox
+if "%PACKER_BUILDER_TYPE%" equ "vmware-iso" goto :vmware
+if "%PACKER_BUILDER_TYPE%" equ "virtualbox-iso" goto :virtualbox
 goto :done
 
 :vmware

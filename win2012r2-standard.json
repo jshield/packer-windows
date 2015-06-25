@@ -1,6 +1,6 @@
   {
   "builders": [{
-    "type": "vmware-windows-iso",
+    "type": "vmware-iso",
     "vm_name": "win2012r2-standard",
     "output_directory":"./build/windows_2012_r2",
     "iso_url": "iso/en_windows_server_2012_r2_x64_dvd_2707946.iso",
@@ -8,9 +8,10 @@
     "iso_checksum": "0e7c09aab20dec3cd7eab236dab90e78",
     "headless": false,
     "boot_wait": "2m",
+    "communicator": "winrm",
     "winrm_username": "ts",
     "winrm_password": "12345x*",
-    "winrm_wait_timeout": "3h",
+    "winrm_timeout": "3h",
     "shutdown_timeout": "1h",
     "shutdown_command": "shutdown /s /t 10 /f /d p:4:1 /c \"Packer Shutdown\"",
     "guest_os_type": "windows8srv-64",

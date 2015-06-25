@@ -11,7 +11,6 @@ Installing Packer using Chocolatey
 ----------------------------------
 
     $ cinst -y packer
-    $ cinst -y packer-windows-plugins
 
 Running Packer
 --------------
@@ -32,7 +31,7 @@ If you want to build only vmware.
 Supported versions
 ------------------
 
-This templates where tested using a packer 0.7.5 and VMware Workstation 8
+This templates where tested using a packer 0.8.0 and VMware Workstation 8
 
 ### credits
 
