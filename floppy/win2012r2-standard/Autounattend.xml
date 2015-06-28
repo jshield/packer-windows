@@ -118,12 +118,12 @@
                 <Order>20</Order>
                 <Description>Disable Windows Firewall</Description>
             </SynchronousCommand>
-            <SynchronousCommand wcm:action="add">
+<!--             <SynchronousCommand wcm:action="add">
                 <CommandLine>c:\windows\system32\WindowsPowerShell\v1.0\powershell.exe -File a:\configwinrm.ps1</CommandLine>
                 <Description>Configure WinRM</Description>
                 <Order>30</Order>
                 <RequiresUserInput>true</RequiresUserInput>
-            </SynchronousCommand>
+            </SynchronousCommand> -->
                 <!-- WITHOUT WINDOWS UPDATES -->
                 <SynchronousCommand wcm:action="add">
                     <CommandLine>cmd.exe /c a:\winrm.bat</CommandLine>
