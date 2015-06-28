@@ -113,6 +113,17 @@
                     <Description>Setup powershell and other mininum requirements</Description>
                     <Order>1</Order>
                 </SynchronousCommand>
+            <SynchronousCommand wcm:action="add">
+                <CommandLine>%SystemRoot%\System32\netsh.exe advfirewall set allprofiles state off</CommandLine>
+                <Order>20</Order>
+                <Description>Disable Windows Firewall</Description>
+            </SynchronousCommand>
+            <SynchronousCommand wcm:action="add">
+                <CommandLine>c:\windows\system32\WindowsPowerShell\v1.0\powershell.exe -File a:\configwinrm.ps1</CommandLine>
+                <Description>Configure WinRM</Description>
+                <Order>30</Order>
+                <RequiresUserInput>true</RequiresUserInput>
+            </SynchronousCommand>
                 <!-- WITHOUT WINDOWS UPDATES -->
                 <SynchronousCommand wcm:action="add">
                     <CommandLine>cmd.exe /c a:\winrm.bat</CommandLine>
