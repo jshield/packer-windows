@@ -5,7 +5,7 @@
       "vm_name": "win10x64-preview-10130",
       "version" : 8,
       "output_directory":"./build/win10x64-preview-10130",
-      "iso_url": "h:/Maniax-PC/E/Work/ISO/Microsoft/Windows/Windows 10/Windows10_InsiderPreview_x64_EN-US_10130.iso",
+      "iso_url": "iso/Windows10_InsiderPreview_x64_EN-US_10130.iso",
       "iso_checksum_type": "sha1",
       "iso_checksum": "5ef5a65b474d63bc3df46cc84d47064b142aa800",
       "headless": false,
