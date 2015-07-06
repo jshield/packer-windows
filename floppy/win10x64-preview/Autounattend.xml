@@ -31,6 +31,10 @@
               <AcceptEula>true</AcceptEula>
               <FullName>Vagrant Administrator</FullName>
               <Organization>Vagrant Inc.</Organization>
+              <ProductKey>
+                  <Key>8N67H-M3CY9-QT7C4-2TR7M-TXYCV</Key>
+                  <WillShowUI>Never</WillShowUI>
+              </ProductKey>
           </UserData>
           <ImageInstall>
               <OSImage>

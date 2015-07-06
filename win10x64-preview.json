@@ -2,12 +2,12 @@
   "builders": [
     {
       "type": "vmware-iso",
-      "vm_name": "win10x64-preview-10130",
+      "vm_name": "win10x64-preview-10162",
       "version" : 8,
-      "output_directory":"./build/win10x64-preview-10130",
-      "iso_url": "iso/Windows10_InsiderPreview_x64_EN-US_10130.iso",
+      "output_directory":"./build/win10x64-preview-10162",
+      "iso_url": "iso/Windows10_InsiderPreview_x64_EN-US_10162.iso",
       "iso_checksum_type": "sha1",
-      "iso_checksum": "5ef5a65b474d63bc3df46cc84d47064b142aa800",
+      "iso_checksum": "31346458255AFEAC1AFEED5C4C61F15D57708B9B",
       "headless": false,
       "boot_wait": "2m",
       "communicator": "winrm",
@@ -25,10 +25,10 @@
         "floppy/win10x64-preview/Autounattend.xml",
         "scripts/configwinrm.ps1"
       ],
-      "vmdk_name": "win10x64-preview-10130",
+      "vmdk_name": "win10x64-preview-10162",
       "vmx_data": {
         "mks.enable3d": "true",
-        "displayName": "Windows.10.x64.10130",
+        "displayName": "Windows.10.x64.10162",
         "memsize": "2048",
         "numvcpus": "4",
         "scsi0.virtualDev": "lsisas1068"
