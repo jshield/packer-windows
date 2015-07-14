@@ -69,8 +69,8 @@
                     <WillShowUI>OnError</WillShowUI>
                 </ProductKey>
                 <AcceptEula>true</AcceptEula>
-                <FullName>Skylock</FullName>
-                <Organization>EMC</Organization>
+                <FullName>#FULL_NAME#</FullName>
+                <Organization>#ORG_NAME#</Organization>
             </UserData>
         </component>
     </settings>
@@ -79,8 +79,8 @@
             <OEMInformation>
                 <HelpCustomized>false</HelpCustomized>
             </OEMInformation>
-            <ComputerName>win-2012-r2</ComputerName>
-            <TimeZone>GTB Standard Time</TimeZone>
+            <ComputerName>#COMP_NAME#</ComputerName>
+            <TimeZone>W. Australia Standard Time</TimeZone>
             <RegisteredOwner/>
         </component>
         <component xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Microsoft-Windows-ServerManager-SvrMgrNc" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
@@ -99,14 +99,6 @@
     </settings>
     <settings pass="oobeSystem">
         <component xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Microsoft-Windows-Shell-Setup" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
-            <AutoLogon>
-                <Password>
-                    <Value>12345x*</Value>
-                    <PlainText>true</PlainText>
-                </Password>
-                <Enabled>true</Enabled>
-                <Username>ts</Username>
-            </AutoLogon>
             <FirstLogonCommands>
                 <SynchronousCommand wcm:action="add">
                     <CommandLine>cmd.exe /c a:\init.bat</CommandLine>
@@ -139,21 +131,9 @@
             </OOBE>
             <UserAccounts>
                 <AdministratorPassword>
-                    <Value>TT</Value>
+                    <Value>#ADMIN_PASSWD#</Value>
                     <PlainText>true</PlainText>
                 </AdministratorPassword>
-                <LocalAccounts>
-                    <LocalAccount wcm:action="add">
-                        <Password>
-                            <Value>12345x*</Value>
-                            <PlainText>true</PlainText>
-                        </Password>
-                        <Group>administrators</Group>
-                        <DisplayName>ts</DisplayName>
-                        <Name>ts</Name>
-                        <Description>Temporary User</Description>
-                    </LocalAccount>
-                </LocalAccounts>
             </UserAccounts>
             <RegisteredOwner/>
         </component>
